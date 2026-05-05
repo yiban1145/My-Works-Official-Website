@@ -1015,7 +1015,7 @@
                 // 首次聚焦提示
                 searchInput.addEventListener('focus', function() {
                     if (!sessionStorage.getItem('cmd-hint-shown')) {
-                        setTimeout(() => { showToast('💡 试试输入 /help 查看隐藏命令'); sessionStorage.setItem('cmd-hint-shown','1'); }, 150);
+                        setTimeout(() => { showToast('试试输入 /help 查看隐藏命令'); sessionStorage.setItem('cmd-hint-shown','1'); }, 150);
                     }
                 }, { once: false });
             }
